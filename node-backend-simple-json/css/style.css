@@ -1,5 +1,8 @@
-body {
+/* body {
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: url("../img/background.png") no-repeat top center/cover;
 }
 
 h1 {
@@ -32,4 +35,272 @@ button {
 
 .hidden {
   display: none;
+} */
+
+/* Font styling */
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+html {
+	font-size: 16px;
+}
+/*------------------------------------------*/
+/* Body Section */
+/*------------------------------------------*/
+body {
+text-align: center;
+height: 100vh;
+width: 100%;
+background: url("../img/background.png") no-repeat top center/cover;
+}
+
+h1 {	
+	color: white;
+	font-size: 3rem;
+}
+
+h2 {	
+	color: white;
+	font-size: 2rem;
+}
+
+h3 {
+	color: white;
+	font-size: 2rem;
+}
+
+span {	
+	color: white;
+	font-size: 2rem;
+}
+
+body section{
+	margin: 1rem;
+}
+
+/*------------------------------------------*/
+/* TitleSection */
+/*------------------------------------------*/
+#title {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*------------------------------------------*/
+/* Scores Table & Reset Section */
+/*------------------------------------------*/
+#scoreOptions { /*Both the score and the option selection */
+	display: flex;
+	justify-content: flex-start;
+	border-radius: 2rem;
+	box-shadow: 0.2rem 1rem 2rem black;
+	background: rgb(208,203,183);
+	background: linear-gradient(45deg, rgba(208,203,183,0.5046219171262255) 0%, rgba(6,196,185,0.5018207966780462) 100%);
+}
+
+	
+#score {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 20%;
+	padding: 0.5rem;
+	border-radius: 2rem;
+	box-shadow: 0.2rem 1rem 2rem black;
+	background: rgb(6,196,185);
+	background: radial-gradient(circle, rgba(6,196,185,1) 0%, rgba(208,203,183,1) 68%, rgba(208,203,183,1) 100%); 
+}
+
+#score > h1 {
+	margin: 1rem; /*Controls the width of the scores table. */
+}
+
+.win-streak {
+	font-size: 5rem;
+	width: 50%;
+}
+
+#reset {
+	margin: 0;
+}
+
+
+/*------------------------------------------*/
+/* Player & Bot Options Section */
+/*------------------------------------------*/
+#iconsOptions {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+}
+
+.hidden {
+	display: none;
+
+}
+
+	/* Player Section */
+	/*------------------------------------------*/
+	.player-section {
+		width: 20%;
+	}
+
+	.player-section > h3 {
+		text-align: left;
+	}
+
+	.player-icons {
+		width: 10rem;
+		height: 10rem;
+		background: red;
+	}
+
+	/* Player Options */
+	/*------------------------------------------*/
+	.player-options {
+		text-align: center;
+		width: 40%;
+	}
+
+	.player-options > button {
+		height: 6rem;
+		width: 12rem;
+		margin: 1rem;
+		font-size: 2rem;
+	}
+
+	/* Bot Section */
+	/*------------------------------------------*/
+	.bot-section {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 20%;
+	}
+
+	.bot-section > h3 {
+		text-align: right;
+	}
+	
+	.bot-icons {
+		display: flex;
+		width: 10rem;
+		height: 10rem;
+		background: red;
+	}
+
+/*------------------------------------------*/
+/* Results Section */
+/*------------------------------------------*/
+.results{
+	text-align: center;
+}
+
+.results > h1 {
+	color: 
+}
+
+/*------------------------------------------*/
+/* Buttons */
+/*------------------------------------------*/
+button {
+	background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+	border-radius: 8px;
+	border-style: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	flex-shrink: 0;
+	font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	height: 3rem;
+	width: 7rem;
+	margin: 0.5rem 0rem;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+	transition: all .5s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	box-shadow: 0.2rem .25rem 0.25rem black;
+}
+
+button:hover {
+	background-image: linear-gradient(92.88deg, #b5457f 9.16%, #cc43be 43.89%, #d73f3f 64.72%);
+	box-shadow: none;
+}
+
+button:active {
+	box-shadow: .5rem .5rem .5rem white;
+}
+
+
+/*------------------------------------------*/
+/* Otherss */
+/*------------------------------------------*/
+/* .choices,
+.score,
+.display-icons {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10rem;
+	align-items: center;
+
+}
+
+.choices {
+	padding-bottom: 2rem;
+	border: 1px solid red;
+} */
+
+#bot-rock{
+	transform: scaleY(-1) rotate(270deg);
+}
+
+/*------------------------------------------*/
+/* Video Section */
+/*------------------------------------------*/
+.videos {
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid blue; */
+	text-align: center;
+  }
+
+
+#video1 {
+	width: 1080px;
+	height: auto;
+	display: none;
+	border-radius: 2rem;
+  }
+  
+  #video2 {
+	width: 1080px;
+	height: auto;
+	display: none;
+	border-radius: 2rem;
+  }
+  
+  #video3 {
+	width: 1080px;
+	height: auto;
+	display: none;
+	border-radius: 2rem;
+  }
+
+/*------------------------------------------*/
+/* Media Queries */
+/*------------------------------------------*/

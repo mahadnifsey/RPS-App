@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -44,6 +44,94 @@
       </div>
       <h3 id="winner"></h3>
     </section>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors</title>
+	<script
+	src="https://kit.fontawesome.com/88b15e6695.js"
+	crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+	<!-- Title Section -->
+    <section id="title">
+		<h1>LET'S PLAY ROCK, PAPER, SCISSORS!!!</h1>
+		<span>Let's beat Mark Zuckerberg at his own "Style".</span>
+	</section>
+
+	<!-- Scores Table & Player Section -->
+	<section id="scoreOptions">
+
+		<!-- Scores Table & Reset Section -->
+		<section id="score">
+			<h1>Score</h1>
+			<h1 class="win-streak"> /3</h1>
+			<section id="reset">
+				<button type="button" class="buttons" id="reset" onclick="clearResult()" value="Reset">Clear</button>
+			</section>
+		</section>
+
+		<!-- Player & Bot Options Section -->
+		<section id="iconsOptions">
+			<!-- Player Selection Section -->
+			<section class="player-section">
+				<h3>You chose: rock</h3> <!--<h3 id="personStatus"></h3>-->
+				<div class="player-icons">
+					<i id="player-rock" class="fa fa-hand-back-fist fa-4x fa-rotate-90 hidden"></i>
+					<i id="player-paper" class="fas fa-hand fa-4x hidden fa-flip-horizontal"></i>
+					<i id="player-scissors" class="fas fa-hand-scissors fa-4x hidden fa-flip-horizontal"></i>
+				</div>
+				<h3>Player:</h3>
+			</section>
+
+			<!-- Player Options Section -->
+			<section class="player-options">
+				<button class="rock" value="rock">Rock</button>
+				<button class="paper" value="paper">Paper</button>
+				<button class="scissors" value="scissors">Scissors</button>
+			</section>
+
+			<!-- Player Selection Section -->
+			<section class="bot-section">
+				<h3>Computer chose: scissors</h3> <!--<h3 id="bot"></h3>-->
+				<div class="bot-icons">
+					<i id="bot-rock" class="fa fa-hand-back-fist fa-4x  fa-rotate-270 hidden"></i>
+					<i id="bot-paper" class="fas fa-hand fa-4x hidden"></i>
+					<i id="bot-scissors" class="fas fa-hand-scissors fa-4x hidden"></i>
+				</div>
+				<h3>Computer:</h3>
+			</section>
+		</section>
+	</section>
+
+	<!-- Results Section -->
+	<section class="results">
+		<h1 id="winner">You win, congratulations!!</h1>
+	</section>
+
+	<!-- Video Section -->
+	<section class="videos">
+		<video id="video1" onloadstart="this.volume=0.1"> <!-- Controls the volume of the video -->
+			<source id="pwins" src="img/player_wins.MOV" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<video id="video2" onloadstart="this.volume=0.1"> <!-- Controls the volume of the video -->
+			<source id="bwins" src="img/bot_wins.MOV" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<video id="video3" onloadstart="this.volume=0.1"> <!-- Controls the volume of the video -->
+			<source id="tiegame" src="img/tie.mov" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+	</section>
+
+
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
